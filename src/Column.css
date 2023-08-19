@@ -1,15 +1,28 @@
-.column {
+ .column {
     background-color: #f2f2f2;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 0 10px;
-    width: 300px;
+    width: 400px;
+    height:70px;
   }
   
-  h3 {
-    margin: 0 0 10px;
+  .column h3 {
+    margin: 0;
     font-size: 18px;
     color: #333;
   }
   
+  .header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .column.done {
+    background-color: #e0f7fa;
+  }
+  
+  .column.cancelled {
+    background-color: #ffdddd;
+  }

@@ -1,27 +1,40 @@
-/* src/components/Ticket.css */
-
 .ticket {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    margin: 10px 0; /* Add margin between tickets */
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow 0.2s;
+    height:110px;
   }
   
   .ticket:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
   .ticket-id {
     font-size: 14px;
     font-weight: bold;
     color: #3498db;
-    margin-bottom: 5px;
+  }
+  
+  .ticket-user {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
   }
   
   .ticket-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
   }
@@ -32,7 +45,7 @@
     align-items: center;
     font-size: 14px;
     color: #666;
-    margin-top: 10px; /* Add margin between title and info */
+    margin-top: 10px;
   }
   
   .ticket-tag {
@@ -41,10 +54,7 @@
     padding: 2px 6px;
     font-size: 14px;
     color: #666;
-  }
-  
-  .ticket-user {
-    color: #3498db;
+
   }
   
   .ticket-priority {

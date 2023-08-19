@@ -1,5 +1,27 @@
 .board {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 20px;
   }
+  
+  .filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ 
